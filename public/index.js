@@ -3,6 +3,10 @@ function main(){
     const incrementButton = document.querySelector('#increment-button');
     const decrementButton = document.querySelector('#decrement-button');
 
+    const response = await fetch('172.20.10.2');
+
+    const result = await response.json();
+
     let countValue = 0;
 
     function increment(){
